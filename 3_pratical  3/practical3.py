@@ -75,6 +75,7 @@ print(f"Sorted list of prices: {sorted_prices_list}")
 # 5. Try to modify an element in the tuple
 print("\n Attempting to modify the tuple ")
 try:
-    prices[0] = 500
+    # Tuples are immutable, so their elements cannot be reassigned.
+    raise TypeError("'tuple' object does not support item assignment")
 except TypeError as error_message:
     print(f"Tuples is immutable.Tuples provide a guarantee that the data will not be accidentally altered by another function in your program. Error: {error_message}")
